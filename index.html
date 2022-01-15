@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+	<title>Travels</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<nav class="menu">
+			<a href="#">
+				<img src="./assets/icons/menu.svg" alt="menu"></img>
+			</a>
+		</nav>
+
+		<header class="header">
+			<h1 class="header__h1">Shikra</h1>
+			<form class="header__search-wrapper">
+				<div class="header__input-container">
+					<img src="./assets/icons/search.svg" alt="search">
+					<input class="header__input" type="search" name="search" id="search" placeholder="Search" />
+				</div>
+				<button class="header__filter-button"></button>
+			</form>
+		</header>
+
+		<sidebar class="sidebar">
+			<div class="sidebar__wrapper">
+				<a class="sidebar-link sidebar-link-dashboard" href="#"><img class="sidebar__btn-image" src="./assets/icons/home-act.svg"
+						alt="dashboard"></a>
+				<label for="dashboard" class="sidebar__label sidebar__label-active">Dashboard</label>
+			</div>
+			<div class="sidebar__wrapper">
+				<a class="sidebar-link sidebar-link-dashboard" href="#"><img class="sidebar__btn-image" src="./assets/icons/calendar-inact.svg"
+						alt="dashboard"></a>
+				<label for="upcoming" class="sidebar__label">Upcoming</label>
+			</div>
+			<div class="sidebar__wrapper">
+				<a class="sidebar-link sidebar-link-dashboard" href="#"><img class="sidebar__btn-image" src="./assets/icons/explore-inact.svg"
+						alt="dashboard"></a>
+				<label for="explore" class="sidebar__label">explore</label>
+			</div>
+			<div class="sidebar__wrapper">
+				<a class="sidebar-link sidebar-link-dashboard" href="#"><img class="sidebar__btn-image" src="./assets/icons/profile-inact.svg"
+						alt="dashboard"></a>
+				<label for="profile" class="sidebar__label">profile</label>
+			</div>
+			<div class="sidebar__wrapper">
+				<a class="sidebar-link sidebar-link-dashboard" href="#"><img class="sidebar__btn-image" src="./assets/icons/settings-inact.svg"
+						alt="dashboard"></a>
+				<label for="settings" class="sidebar__label">settings</label>
+			</div>
+			<div class="sidebar__wrapper sidebar__wrapper-logout">
+				<a class="sidebar-link sidebar-link-dashboard" href="#"><img class="sidebar__btn-image" src="./assets/icons/logout-inact.svg"
+						alt="dashboard"></a>
+				<label for="logout" class="sidebar__label">logout</label>
+			</div>
+		</sidebar>
+
+		<main class="main">
+
+			<div class="main__h2-btns-wrapper">
+				<h2 class="main__h2 main__h2-explore">Explore</h2>
+				<div class="main__btns-move-cards">
+					<button class="main__btn-move-left"></button>
+					<button class="main__btn-move-right"></button>
+				</div>
+			</div>
+
+			<!-- -------------------- Cards ---------------------->
+			<section class="main__cards-section">
+				<img class="main__thumb-act-icon" src="./assets/icons/thumb-act-1.svg" alt="thumb-act">
+				<div class="main__place-thumbnails-container">
+					<a class="main__place-thumbnail" href="#">America</a>
+					<a class="main__place-thumbnail main__thumbnail-active" href="#">Sights</a>
+					<a class="main__place-thumbnail" href="#">Europe</a>
+				</div>
+
+				<div class="main__cards-container">
+					<figure class="main__sight-card">
+						<img class="main__sight-photo" src='./assets/img/island-1.png' alt="phiphi">
+						<figcaption class="main__sight-caption">Phi Phi Islands</figcaption>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">Thailand</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
+					</figure>
+					<!---------------------- Add cards here --------------------->
+					<figure class="main__sight-card main__desktop-card">
+						<img class="main__sight-photo" src='./assets/img/island-2.png' alt="kudahuvadhoo">
+						<figcaption class="main__sight-caption">Kudahuvadhoo Island</figcaption>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">Maldives</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
+					</figure>
+					<figure class="main__sight-card main__desktop-card">
+						<img class="main__sight-photo" src='./assets/img/island-3.png' alt="santorini">
+						<figcaption class="main__sight-caption">Santorini</figcaption>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">Greece</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
+					</figure>
+					<figure class="main__sight-card main__desktop-card">
+						<img class="main__sight-photo" src='./assets/img/island-4.png' alt="kandima">
+						<figcaption class="main__sight-caption">Kudahuvadhoo Island</figcaption>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">Maldives</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
+					</figure>
+					<figure class="main__sight-card main__desktop-card">
+						<img class="main__sight-photo" src='./assets/img/island-5.png' alt="chicago">
+						<figcaption class="main__sight-caption">Chicago</figcaption>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">USA</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
+					</figure>
+				</div>
+			</section>
+
+			<!-- ----------------- Invite Friends ----------------- -->
+			<div class="main__sub-header main__friends-header">
+				<h2 class="main__h2 main__h2-friends">Invite Friends</h2>
+				<button class="main__btn-friends-action"></button>
+			</div>
+
+			<section class="main__friends-section">
+				<figure class="main__friend-card main__friend-1">
+					<img class="main__friend-pic" src='./assets/icons/friend-1.svg' alt="friend">
+					<figcaption>Nate</figcaption>
+				</figure>
+				<figure class="main__friend-card main__friend-2">
+					<img class="main__friend-pic" src='./assets/icons/friend-2.svg' alt="friend">
+					<figcaption>Jim</figcaption>
+				</figure>
+				<figure class="main__friend-card main__friend-3">
+					<img class="main__friend-pic" src='./assets/icons/friend-3.svg' alt="friend">
+					<figcaption>Angela</figcaption>
+				</figure>
+				<figure class="main__friend-card main__friend-4">
+					<img class="main__friend-pic" src='./assets/icons/friend-4.svg' alt="friend">
+					<figcaption>Bhaaji</figcaption>
+				</figure>
+				<figure class="main__friend-card main__friend-5">
+					<img class="main__friend-pic" src='./assets/icons/friend-5.svg' alt="friend">
+					<figcaption>Billo</figcaption>
+				</figure>
+				<figure class="main__friend-card main__friend-6">
+					<img class="main__friend-pic" src='./assets/icons/friend-6.svg' alt="friend">
+					<figcaption>Alex</figcaption>
+				</figure>
+			</section>
+
+			<!-- --------------- Graph ------------------- -->
+			<div class="main__sub-header main__graph-header">
+				<h2 class="main__h2 main__h2-members">Members</h2>
+				<button class="main__btn-graph-action"></button>
+			</div>
+
+			<section class="main__graph-section">
+				<div class="main__legend-container">
+					<p class="main__legend-item light-grey-text main__legend-item-1">Guests</p>
+					<p class="main__legend-item light-grey-text main__legend-item-2">Registered</p>
+				</div>
+
+				<div class="main__graph-numbers-container">
+					<p class="main__graph-number light-grey-text">10</p>
+					<p class="main__graph-number light-grey-text">20</p>
+					<p class="main__graph-number light-grey-text">30</p>
+					<p class="main__graph-number light-grey-text">40</p>
+				</div>
+
+				<div class="main__graph-data">
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-1">
+							<div class="main__graph-scale-red main__red-1"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Mon</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-2">
+							<div class="main__graph-scale-red main__red-2"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Tue</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-3">
+							<div class="main__graph-scale-red main__red-3"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Wed</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-4">
+							<div class="main__graph-scale-red main__red-4"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Thu</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-5">
+							<div class="main__graph-scale-red main__red-5"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Fri</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-6">
+							<div class="main__graph-scale-red main__red-6"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Sat</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-7">
+							<div class="main__graph-scale-red main__red-7"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Sun</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-3">
+							<div class="main__graph-scale-red main__red-3"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Wed</div>
+					</div>
+
+				</div>
+
+			</section>
+		</main>
+
+		<aside class="aside"></aside>
+	</div>
+</body>
+
+</html>

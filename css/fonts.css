@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+	font-family: 'Conv_Gilroy-Medium';
+	src: url('../fonts/Gilroy-Medium/Gilroy-Medium.eot');
+	src: local('Gilroy-Medium'), url('../fonts/Gilroy-Medium/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium/Gilroy-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Gilroy-Regular';
+	src: url('../fonts/Gilroy-Regular/Gilroy-Regular.eot');
+	src: local('Gilroy-Regular'), url('../fonts/Gilroy-Regular/Gilroy-Regular.woff') format('woff'), url('../fonts/Gilroy-Regular/Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Gilroy-Bold';
+	src: url('../fonts/Gilroy-Bold/Gilroy-Bold.eot');
+	src: local('Gilroy-Bold'), url('../fonts/Gilroy-Bold/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold/Gilroy-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_avenir_roman_12';
+	src: url('../fonts/avenir_roman_12/avenir_roman_12.eot');
+	src: local('Avenir-Roman'), url('../fonts/avenir_roman_12/avenir_roman_12.woff') format('woff'), url('../fonts/avenir_roman_12/avenir_roman_12.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
