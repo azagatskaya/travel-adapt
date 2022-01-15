@@ -20,7 +20,6 @@
 }
 
 body {
-  /* height: 100vh; */
   font-family: "Conv_Gilroy-Medium", "Open Sans", sans-serif;
 }
 .container {
@@ -47,9 +46,3 @@ body {
 .main {
   grid-area: ga-main;
 }
-
-
-
-
-
-
