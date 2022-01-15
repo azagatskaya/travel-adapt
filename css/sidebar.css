@@ -1,8 +1,7 @@
 .sidebar {
   background-color: #eff3ff;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .sidebar__wrapper {
@@ -23,42 +22,5 @@
   color: #1c295d;
 }
 
-@media screen and (min-width: 768px) {
-  .sidebar-link,
-  .sidebar__btn-image {
-    width: 50px;
-    height: 50px;
-  }
-  .sidebar {
-    flex-direction: column;
-  }
-  .sidebar__wrapper {
-    height: 75px;
-  }
-  .sidebar__wrapper-logout {
-    margin-top: calc((((100vh - 15vh) / 6) - 85px) * 3);
-  }
-  .sidebar__label {
-    font-size: 12px;
-  }
-  .sidebar-link {
-    border-radius: 10px;
-  }
-  .sidebar-link:hover {
-    box-shadow: 1px 10px 20px rgba(88, 92, 229, 0.25);
-  }
-}
-@media screen and (max-width: 767px) {
-  .sidebar {
-    flex-direction: row;
-  }
-  .sidebar__label {
-    font-size: 0.9em;
-  }
-  .sidebar-link {
-    display: none;
-  }
-  .sidebar__label:hover {
-    text-shadow: 1px 1px 3px rgba(88, 92, 229, 0.5);
-  }
-}
+
+

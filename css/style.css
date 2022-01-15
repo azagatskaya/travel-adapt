@@ -3,13 +3,28 @@
 @import "sidebar.css";
 @import "header.css";
 @import "main.css";
+@import "max-width-767.css";
+@import "min-width-768.css";
+@import "width-481-767.css";
+
+@media screen and (max-width: 480px) {
+  .main__tab-card {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .main__desktop-card {
+    display: none;
+  }
+}
 
 body {
-  min-height: 100vh;
+  /* height: 100vh; */
   font-family: "Conv_Gilroy-Medium", "Open Sans", sans-serif;
 }
 .container {
-  min-height: 100vh;
+  min-height: 100%;
   min-width: 100vw;
 }
 .menu {
@@ -32,74 +47,9 @@ body {
 .main {
   grid-area: ga-main;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-rows:
-      [full-start menu-start] minmax(113px, 15vh)
-      [menu-end main-start] 1fr
-      [main-end full-end];
 
-    grid-template-columns:
-      [full-start menu-start] minmax(113px, 15vh)
-      [menu-end main-start] 1fr
-      [main-end full-end];
 
-    grid-template-areas:
-      "ga-menu ga-hd"
-      "ga-sb ga-main";
-  }
-  .header {
-    padding: 0 10%;
-  }
-  .header__search-wrapper {
-    width: 50%;
-  }
-  .header__input-container,
-  .header__input {
-    border-radius: 26px;
-    height: 52px;
-  }
-  .header__filter-button {
-    height: 52px;
-    width: 52px;
-  }
-  .header__input-container {
-    width: 85%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .main__desktop-card {
-    display: none;
-  }
-  .container {
-    display: grid;
-    grid-template-rows: 70px 40px 1fr;
-    grid-template-columns: 80px 1fr;
-    grid-template-areas:
-      "ga-menu ga-hd"
-      "ga-sb ga-sb"
-      "ga-main ga-main";
-  }
-  .header {
-    padding: 0 4%;
-  }
-  .header__search-wrapper {
-    width: 70%;
-  }
-  .header__input-container,
-  .header__input {
-    border-radius: 20px;
-    height: 36px;
-  }
-  .header__filter-button {
-    height: 36px;
-    width: 36px;
-  }
-  .header__input-container {
-    width: 75%;
-  }
-  .header__filter-button {
-    box-shadow: 1px 2px 10px rgba(248, 101, 73, 1);
-  }
-}
+
+
+
+
