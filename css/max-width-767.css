@@ -1,4 +1,4 @@
-@media screen and (min-width: 481px) and (max-width: 767.99px) {
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
   .main__cards-container {
     grid-template-columns: repeat(2, minmax(120px, 293px));
   }
