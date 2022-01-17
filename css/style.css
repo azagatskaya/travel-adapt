@@ -5,7 +5,6 @@
 @import "main.css";
 @import "max-width-767.css";
 @import "min-width-768.css";
-@import "width-481-767.css";
 
 @media screen and (max-width: 575px) {
   .main__tab-card {
