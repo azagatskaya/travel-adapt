@@ -35,9 +35,6 @@
   .header__filter-button {
     box-shadow: 1px 2px 10px rgba(248, 101, 73, 1);
   }
-}
-
-@media screen and (max-width: 767.99px) {
   .sidebar {
     flex-direction: row;
   }
@@ -50,9 +47,6 @@
   .sidebar__label:hover {
     text-shadow: 1px 1px 3px rgba(88, 92, 229, 0.5);
   }
-}
-
-@media screen and (max-width: 767.99px) {
   .main {
     display: grid;
 
@@ -114,6 +108,9 @@
     height: 170px;
     border-radius: 20px;
     object-fit: cover;
+  }
+  .light-grey-text{
+    font-size: 14px; 
   }
 }
 
